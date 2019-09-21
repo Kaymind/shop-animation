@@ -1,0 +1,67 @@
+body {
+	background-color: lightgrey;
+}
+
+.product-pic {
+	width: 100%;
+	height: 100%;
+}
+
+.hover-item .details {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0,0,0,0.8);
+	color: #fff;
+	top: 100%;
+	transition: 0.6s;
+	letter-spacing: 2px;
+}
+
+.hover-item .details span {
+	color: #000;
+	background-color: #fff;
+	padding: 0 5px;
+	font-size: 1.5rem;
+}
+
+.hover-item .details p {
+	letter-spacing: 1px;
+}
+
+.product-item {
+	position: relative;
+	overflow: hidden;
+}
+
+.product-item:hover .details {
+	top: 0;
+}
+
+.skew-item .details {
+	color: #fff;
+	position: absolute;
+	background-color: rgba(0,0,0,1);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	transition: 0.2s linear;
+	transform: scaleX(0);
+}
+
+.skew-item img{
+	transition: 0.2s linear 0.2s;
+}
+
+.skew-item:hover img{
+	transform: scaleX(0);
+	transition: 0.2s linear 0s !important;
+}
+
+.skew-item:hover .details{
+	transform: scaleX(1);
+	transition: 0.2s linear 0.2s !important;
+}
+
+
+
